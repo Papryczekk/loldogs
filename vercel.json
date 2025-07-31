@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/proxy", "destination": "/api/proxy.js" },
+    { "source": "/api/firebase-config", "destination": "/api/firebase-config.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
