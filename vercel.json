@@ -1,7 +1,11 @@
 {
   "rewrites": [
-    { "source": "/api/proxy", "destination": "/api/proxy.js" },
-    { "source": "/api/firebase-config", "destination": "/api/firebase-config.js" },
+    { "source": "/api/proxy", "destination": "/api/proxy.cjs" },
+    { "source": "/api/firebase-config", "destination": "/api/firebase-config.cjs" },
     { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  ],
+  "dev": {
+    "command": "npm run dev"
+  },
+  "framework": "vite"
 }
